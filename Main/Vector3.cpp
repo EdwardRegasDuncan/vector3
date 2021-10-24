@@ -1,14 +1,10 @@
-#pragma once
 #include "Vector3.h"
 
-void Vector3(float* _x, float* _y, float* _z)
+// Vector3::Vector3() : x(0), y(0), z(0){}
+
+/* Vector3::Vector3(const float& x_, const float& y_, const float& z_)
 {
-    x = _x;
-    y = _y;
-    z = _z;
-}
-
-void ~Vector3()
-{}
-
-}
+    x = x_;
+    y = y_;
+    z = z_;
+} */
