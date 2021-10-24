@@ -13,9 +13,9 @@ public:
     Vector3<T>(T xyz) : x(xyz), y(xyz), z(xyz) {};
     Vector3<T>(T x, T y, T z) : x(x), y(y), z(z) {};
 
-    float GetX() const {return x;}
-    float GetY() const {return y;}
-    float GetZ() const {return z;}
+    T GetX() const {return (T)x;}
+    T GetY() const {return (T)y;}
+    T GetZ() const {return z;}
 private:
     T x, y, z;
 
