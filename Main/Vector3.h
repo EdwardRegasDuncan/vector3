@@ -3,6 +3,7 @@
 
 #include <iostream>
 #include <math.h>
+#include <sstream>
 
 
 template<typename T>
@@ -20,8 +21,10 @@ public:
     float Magnitude();
     void Normalize();
 
-    void Add(const Vector3<T>& vec);
-    void Subtract(const Vector3& vec);
+    /* void Add(const Vector3<T>& vec);
+    void Subtract(const Vector3& vec); */
+
+    std::string ToString();
 private:
     T x, y, z;
 

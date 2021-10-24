@@ -17,12 +17,12 @@ int main()
     Vector3<char> v4(3, 3, 3);
     Vector3<unsigned int> v5(-4, -4, -4);
     Vector3<unsigned int> v6(4, 4, 4);
-    std::cout <<"Vector3 #1: "<<v1.GetX()<<", "<<v1.GetY()<<", "<<v1.GetZ()<<std::endl;
-    std::cout <<"Vector3 #2: "<<v2.GetX()<<", "<<v2.GetY()<<", "<<v2.GetZ()<<std::endl;
-    std::cout <<"Vector3 #3: "<<v3.GetX()<<", "<<v3.GetY()<<", "<<v3.GetZ()<<std::endl;
-    std::cout <<"Vector3 #4: "<<v4.GetX()<<", "<<v4.GetY()<<", "<<v4.GetZ()<<std::endl;
-    std::cout <<"Vector3 #5: "<<v5.GetX()<<", "<<v5.GetY()<<", "<<v5.GetZ()<<std::endl;
-    std::cout <<"Vector3 #6: "<<v6.GetX()<<", "<<v6.GetY()<<", "<<v6.GetZ()<<std::endl;
+    std::cout <<"Vector3 #1: "<<v1.ToString()<<std::endl;
+    std::cout <<"Vector3 #2: "<<v2.ToString()<<std::endl;
+    std::cout <<"Vector3 #3: "<<v3.ToString()<<std::endl;
+    std::cout <<"Vector3 #4: "<<v4.ToString()<<std::endl;
+    std::cout <<"Vector3 #5: "<<v5.ToString()<<std::endl;
+    std::cout <<"Vector3 #6: "<<v6.ToString()<<std::endl;
 
     // test nomralization
     Vector3<float> normalizeVec(1, 1, 1);
@@ -30,7 +30,10 @@ int main()
     normalizeVec.Normalize();
     std::cout <<"After Normalisation: "<<normalizeVec.GetX()<<", "<<normalizeVec.GetY()<<", "<<normalizeVec.GetZ()<<std::endl;
 
-    
+    // test Adding vectors
+    /* Vector3<float> addVec(1, 1, 1);
+    addVec.Add(addVec); */
+
 
     return 0;
 }
