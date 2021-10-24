@@ -27,6 +27,7 @@ public:
     float DistanceTo(const Vector3<T>& target);
     float DotProduct(const Vector3<T>& target);
     Vector3<float> CrossProduct(const Vector3<T>& target);
+    float AngleBetween(const Vector3<T>& target);
 
 
     std::string ToString();

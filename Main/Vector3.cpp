@@ -55,6 +55,13 @@ Vector3<float> Vector3<T>::CrossProduct(const Vector3<T>& target){
     return cProd;
 }
 
+template<typename T>
+float Vector3<T>::AngleBetween(const Vector3<T>& target){
+    
+    return 0;
+}
+
+
 //template declarations
 template void Vector3<float>::Normalize();
 template void Vector3<int>::Normalize();
@@ -71,6 +78,9 @@ template float Vector3<int>::DistanceTo(const Vector3<int>& target);
 template float Vector3<float>::DotProduct(const Vector3<float>& target);
 
 template Vector3<float> Vector3<float>::CrossProduct(const Vector3<float>& target);
+
+template float Vector3<float>::AngleBetween(const Vector3<float>& target);
+
 //string output
 template std::string Vector3<float>::ToString();
 template std::string Vector3<int>::ToString();
