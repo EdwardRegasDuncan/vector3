@@ -4,8 +4,8 @@
 #include <iostream>
 #include <math.h>
 
-template<typename T>
 
+template<typename T>
 class Vector3
 {
 public:
@@ -15,10 +15,17 @@ public:
 
     T GetX() const {return (T)x;}
     T GetY() const {return (T)y;}
-    T GetZ() const {return z;}
+    T GetZ() const {return (T)z;}
+
+    float Magnitude();
+    void Normalize();
+
+    void Add(const Vector3<T>& vec);
+    void Subtract(const Vector3& vec);
 private:
     T x, y, z;
 
 };
+
 
 #endif
